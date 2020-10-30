@@ -1,0 +1,88 @@
+.workspace{
+    background: #F7FAFC;
+    &_container{
+        width: 1110px;
+        margin-left: 26%;
+        transition: all 1s;
+        &.active{
+            margin-left: 18%;
+         }
+    }
+    &_wrap-name{
+        position: absolute;
+        right: 0;
+        top: 24px;
+        background: #FFFFFF;
+        box-shadow: 20px 20px 62px rgba(215, 222, 225, 0.6);
+        border-radius: 16px 0px 0px 16px;
+        padding: 14px 5px 15px 23px;
+        img{
+            margin-right: 16px;
+        }
+        .name{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 25px;
+            display: flex;
+            align-items: center;
+        }
+        .state{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 25px;
+            display: flex;
+            align-items: center;
+            color: #27AE60;
+        }
+    }
+    &_wrap-content{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 60%;
+         margin: 88px auto;
+       
+
+    }
+    &_item{
+        width: 205px;
+        box-sizing: content-box;
+        position: relative;
+    }
+    .model-red{
+        background: #CB4B6A;
+    }
+    &_item-header{
+        width: 100%;
+        background: #373759;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        display: flex;
+        justify-content: center;
+        letter-spacing: -0.02em;
+        color: #F3F4F6;
+        padding: 16px 0;
+        height: 105px;
+        box-sizing:border-box;
+        border-radius: 16px;
+    }
+    &_item-body{
+        width: 100%;
+        padding: 18px 13px 37px;
+        box-sizing: border-box;
+        position: relative;
+        top: -51px;
+        background: #FFFFFF;
+        box-shadow: 32px 32px 62px rgba(215, 222, 225, 0.6);
+        border-radius: 20px;
+    }
+    &_item-field{
+        border: 1px dashed #BAB9C1;
+        box-sizing: border-box;
+        border-radius: 16px;
+        padding: 11px 14px;
+        margin-bottom: 9px;
+    }
+}

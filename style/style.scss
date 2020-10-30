@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('ProximaNovaBlack.ttf');
+    src: local('ProximaNova'), local('ProximaNova'), url('fonts/ProximaNovaBlack.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('ProximaNovaBlack.ttf');
+    src: local('ProximaNova'), local('ProximaNova'), url('fonts/ProximaNovaBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('ProximaNovaBlack.ttf');
+    src: local('ProximaNova'), local('ProximaNova'), url('fonts/ProximaNovaRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    font-family: 'ProximaNova', sans-serif;
+    color: #373759;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+@import"launcher";
+@import"documentation-modal";
+@import"workspace";
+@import"sidebar";
+@import"header";

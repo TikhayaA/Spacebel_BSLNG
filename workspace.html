@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js"></script>
+    <title>Workspace</title>
+</head>
+<body class="workspace">
+    <div class="workspace_wrap-name row">
+        <img src="img/earth.svg" alt="">
+        <div class="col ">
+            <span class="name">Simulator Name</span>
+            <span class="state">State</span>
+        </div>
+    </div>
+    <aside class="sidebar col">
+        <button class="sidebar_open-btn"><img src="img/Vector-arrow.svg" alt=""></button>
+        <div class="sidebar_wrap-play">
+            <img class="play active" src="img/play.svg" alt="">
+            <img class="play-transparent active" src="img/play-transparent.svg" alt="">
+            <img class="pause" src="img/pause.svg" alt="">
+            <img class="pause-transparent" src="img/pause-transparent.svg" alt="">
+        </div>
+       <div class="sidebar_header col">
+           <h1>BSLNG</h1>
+            <div class="sidebar_header-content col">
+                    <p class="sidebar_header-title">Simulation Time</p>
+                    <p class="sidebar_header-content-time">123 456 , 125 456 789 s</p>
+                    <div class="radiobtnwrap col">
+                        <div class="radiobtnwrap_item row">Real Time
+                            <div class="component-block-content">
+                                <input type="checkbox" class="checkbox__toggle" id="checkbox-toggle-label1"checked >
+                                <label for="checkbox-toggle-label1" class="checkbox__toggle__label"></label> <br>
+                            </div>   
+                        </div>
+                        <div class="row">
+                            <span class="active">x1.75</span>
+                            <span>x1.75</span>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </aside>
+    <main class="workspace_container col">
+       <header>
+           <nav>
+               <ul class="row">
+                <li class="active"><a href="">
+                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.03197 11.5881L12.5538 5.56797C12.2019 5.01826 12 4.37705 12 3.69231C12 1.6531 13.7909 0 16 0C18.2091 0 20 1.6531 20 3.69231C20 5.73151 18.2091 7.38461 16 7.38461C15.2582 7.38461 14.5635 7.19822 13.968 6.87339L7.44618 12.8935C7.79807 13.4432 8 14.0845 8 14.7692C8 16.8084 6.20914 18.4615 4 18.4615C1.79086 18.4615 0 16.8084 0 14.7692C0 12.7301 1.79086 11.0769 4 11.0769C4.74181 11.0769 5.43645 11.2633 6.03197 11.5881ZM4 16.6154C5.10457 16.6154 6 15.7889 6 14.7692C6 13.7496 5.10457 12.9231 4 12.9231C2.89543 12.9231 2 13.7496 2 14.7692C2 15.7889 2.89543 16.6154 4 16.6154ZM18 3.69231C18 4.71191 17.1046 5.53846 16 5.53846C14.8954 5.53846 14 4.71191 14 3.69231C14 2.6727 14.8954 1.84615 16 1.84615C17.1046 1.84615 18 2.6727 18 3.69231Z" fill="#373759"/>
+                        </svg>
+                        Workspace</a></li>
+                    <li><a href="">
+                    <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.59996 6.4968L13.5514 10.4483C14.02 10.9169 14.7798 10.9169 15.2484 10.4483L21.2483 4.4484L23.9999 7.2V0H16.7999L19.5515 2.7516L14.3999 7.9032L10.4485 3.95173C9.97986 3.4831 9.22007 3.4831 8.75143 3.95173L0.351562 12.3516L2.04836 14.0484L9.59996 6.4968Z" fill="#373759"/>
+                        </svg>
+                      Monitoring</a>
+                    </li>
+                    <li><a href="">
+                        <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                            <path d="M21.6 0H2.4C1.0764 0 0 1.0764 0 2.4V16.8C0 18.1236 1.0764 19.2 2.4 19.2H21.6C22.9236 19.2 24 18.1236 24 16.8V2.4C24 1.0764 22.9236 0 21.6 0ZM2.4 16.8V2.4H21.6L21.6024 16.8H2.4Z" fill="#373759"/>
+                            <path d="M11.9998 12H19.1998V14.4H11.9998V12ZM4.7998 7.19997L7.55141 9.95157L4.7998 12.7032L6.4966 14.4L10.945 9.95157L6.4966 5.50317L4.7998 7.19997Z" fill="#373759"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0">
+                            <rect width="24" height="19.2" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        Scripting</a>
+                    </li>
+               </ul>
+           </nav>
+       </header>
+       <section class="workspace_wrap-content row">
+           <div class="workspace_item">
+               <div class="workspace_item-header model-red">Model</div>
+               <div class="workspace_item-body">
+                   <div class="workspace_item-field">Field</div>
+                   <div class="workspace_item-field">Field</div>
+                   <div class="workspace_item-field">Field</div>
+                   <div class="workspace_item-field">Field</div>
+               </div>
+           </div>
+          <div class="workspace_item"> 
+                <div class="workspace_item-header">Model</div>
+                <div class="workspace_item-body">
+                    <div class="workspace_item-field">Field</div>
+                    <div class="workspace_item-field">Field</div>
+                    <div class="workspace_item-field">Field</div>
+                    <div class="workspace_item-field">Field</div>
+                </div>
+            </div>
+            <div class="workspace_item">
+                <div class="workspace_item-header">Model</div>
+                <div class="workspace_item-body">
+                    <div class="workspace_item-field">Field</div>
+                    <div class="workspace_item-field">Field</div>
+                    <div class="workspace_item-field">Field</div>
+                    <div class="workspace_item-field">Field</div>
+                </div>
+            </div>
+       </section>
+    </main>
+    <button class="launcher_support-btn"><img src="img/Support.svg" alt=""></button>
+    <section class="documentation-modal col">
+        <button class="documentation-modal_close-btn"><img src="img/close-modal.svg" alt=""></button>
+        <div class="documentation-modal_item">
+            <p class="documentation-modal_title">How to change engine oil in a few easy steps</p>
+            <p class="documentation-modal_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi mauris, porttitor at neque eget, molestie porta lectus.</p>
+            <div class="documentation-modal_list">
+                <div class="row documentation-modal_list-row">
+                    <span>1</span>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi mauris, porttitor at neque eget, molestie porta lectus.</span>
+                </div>
+                <div class="row documentation-modal_list-row">
+                    <span>2</span>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi mauris, porttitor at neque eget, molestie porta lectus.</span>
+                </div>
+                <div class="row documentation-modal_list-row">
+                    <span>3</span>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi mauris, porttitor at neque eget, molestie porta lectus.</span>
+                </div>
+            </div>
+        </div>
+        <div class="documentation-modal_wrap-btn row">
+            <button class="documentation-modal_need-help">Need help ?</button>
+            <button class="documentation-modal_contact-us">Contact US</button>
+        </div>
+    </section>
+</body>
+</html>

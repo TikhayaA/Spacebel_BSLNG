@@ -1,0 +1,53 @@
+header{
+    nav{
+
+        ul{
+            justify-content: space-between;
+            // margin-top: 24px;
+            width: 40%;
+            margin: 24px auto;
+            li{
+                margin-right: 60px;
+                a{
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 21px;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: -0.02em;
+                    width: 100%;
+                    color: #373759;
+                    svg{
+                        margin-right: 16px;
+                    }
+                }
+                &.active{
+                    position: relative;
+                    a{
+                        color: #19A4EC;
+                        svg{
+                            path{
+                                fill: #19A4EC;
+                            }
+                        }
+                    }
+                    &:after{
+                        position: absolute;
+                        content:"";
+                        width: 0;
+                        height: 0;
+                        border-left: 15px solid transparent;
+                        border-left: 27px solid transparent;
+                        border-right: 27px solid transparent;
+                        border-top: 23px solid #19A4EC;
+                        top: -36px;
+                        right: 50%;
+                        transform: translate(50%, 0);
+                    }
+                }
+            }
+        }
+    }
+}

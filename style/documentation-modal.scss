@@ -1,0 +1,101 @@
+.documentation-modal{
+    background: #373759;
+    border-radius: 16px;
+    width: 455px;
+    position: absolute;
+    right: 50px;
+    bottom: 125px;
+    z-index: 2;
+    padding: 44px 22px 29px 23px;
+    box-sizing: border-box;
+    color: #373759;
+    font-weight: 600;
+    display: none;
+    &.active{
+        display: block;
+    }
+    &_close-btn{
+        position: absolute;
+        content: "";
+        top: 4px;
+        right: 7px;
+        background: #19A4EC;
+        border: 10px solid #373759;
+        border-radius: 50%;
+        width: 51px;
+        height: 51px;
+}
+    &_item{
+        background: #FFFFFF;
+        border-radius: 16px;
+        width: 100%;
+        padding: 61px 15px 70px;
+        box-sizing: border-box; 
+    }
+    &_title{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.0120588em;
+        color: #19A4EC;
+        margin-bottom: 10px;
+    }
+    &_text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.0120588em;
+        margin-bottom: 13px;
+    }
+    &_list-row{
+        margin-bottom: 17px;
+        >:nth-child(1){
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+            letter-spacing: 0.0120588em;
+            color: #19A4EC;
+            padding-right: 20px;
+            align-self: center;
+        }
+        >:nth-child(2){
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.0120588em;
+            color: #373759;
+        }
+    }
+    &_wrap-btn{
+        justify-content: center;
+        margin-top: 20px;
+    }
+    &_need-help{
+        background: none;
+        border: none;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: 0.0120588em;
+        color: #F3F4F6;
+        margin-right: 19px;
+    }
+    &_contact-us{
+        border: none;
+        background: #19A4EC;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.0120588em;
+        text-transform: uppercase;
+        color: #F3F4F6;
+        width: 54%;
+        padding: 18px 0;
+    }
+}
